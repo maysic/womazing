@@ -9,27 +9,16 @@ import useStore from "@/app/store/store";
 
 
 
-async function getData(id:string) {
+async function getData(id:number) {
   const response = await fetch(`https://fakestoreapi.com/products/${id}`)
   return response.json()
 }
 
-export type Props = {
-  params: {
-    id: string
-  }
-}
-
-export async function generateMetadata({params: {id}}: Props): Promise<Metadata> {
-  const item = await getData(id)
-  return {
-    title: item.title
-  }
-}
 
 
 
-export default async function CardItem({params: { id }}: Props) {
+
+export default async function CardItem(id:number) {
 
   
   const {bags, addProduct} = useStore()
