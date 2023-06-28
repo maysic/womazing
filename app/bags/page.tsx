@@ -9,12 +9,8 @@ import NavInPages from '../components/navInPages/navInPages';
 
 export default function Bags() {
   const { bags ,removeProduct} = useStore()
-  let storage = localStorage.getItem('product')
-  let listStorage
-  if (storage) {
-    listStorage = JSON.parse(storage)
-  }
-  let list = bags || listStorage
+
+  let list = bags 
 
   let count = 0
   let copy = 0
