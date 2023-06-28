@@ -1,10 +1,11 @@
-import { Metadata } from 'next';
+"use client"
+
 import styles from './page.module.css'
 import NavInPages from '../components/navInPages/navInPages';
 import { useCategory } from '../hooks/useCategory';
 import { card } from '../types';
 import Card from '../components/card/card';
-import { MouseEventHandler, useEffect, useMemo, useState } from 'react';
+import {  useState, useEffect } from 'react';
 
 
 

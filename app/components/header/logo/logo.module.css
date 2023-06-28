@@ -4,9 +4,13 @@
   align-items: center;
 }
 
+.svg path {
+  fill: var(--main);
+  transition: all 0.3s linear;
+}
 
 
-.box:hover svg path {
+.box:hover .svg path {
   fill: var(--second);
 }
 

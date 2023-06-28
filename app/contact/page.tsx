@@ -1,4 +1,5 @@
-import { Metadata } from 'next';
+"use client"
+
 import styles from './page.module.css'
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 import NavInPages from '../components/navInPages/navInPages';
