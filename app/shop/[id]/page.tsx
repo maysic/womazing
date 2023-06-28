@@ -9,7 +9,7 @@ import useStore from "@/app/store/store";
 
 
 
-async function getData(id:number) {
+async function getData(id:string) {
   const response = await fetch(`https://fakestoreapi.com/products/${id}`)
   return response.json()
 }
@@ -22,7 +22,7 @@ export default async function CardItem(id:number) {
 
   
   const {bags, addProduct} = useStore()
-  const item: card = await getData(id)
+  const item: card = await getData(String(id))
   let Local: ProductList = []
 
   function handleAddProduct(product: card) {
