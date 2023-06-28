@@ -18,11 +18,11 @@ async function getData(id:string) {
 
 
 
-export default async function CardItem(id:number) {
+export default async function CardItem(id:string) {
 
   
   const {bags, addProduct} = useStore()
-  const item: card = await getData(String(id))
+  const item: card = await getData(id)
   let Local: ProductList = []
 
   function handleAddProduct(product: card) {
