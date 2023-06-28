@@ -3,11 +3,6 @@ import { Metadata } from 'next';
 import styles from './page.module.css'
 import NavInPages from '../components/navInPages/navInPages';
 
-export const metadata: Metadata = {
-  title: 'О бренде',
-  description: 'Описание бренда Womazing',
-}
-
 
 
 export default function About() {

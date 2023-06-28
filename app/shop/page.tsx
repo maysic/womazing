@@ -8,10 +8,6 @@ import { MouseEventHandler, useEffect, useMemo, useState } from 'react';
 
 
 
-export const metadata: Metadata = {
-  title: 'Товары бренда Womazing',
-  description: 'Товары бренда Womazing',
-}
 
 export interface ICategories  {
   id: string

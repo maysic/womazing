@@ -6,7 +6,7 @@ import Nav from "./nav/Nav";
 
 export default function Header() {
   return ( 
-    <header>
+    <header className={styles.header}>
         <div className="container">
           <div className={styles.content}>
 
