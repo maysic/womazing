@@ -1,0 +1,14 @@
+.link {
+  color: var(--main);
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  transition: all .3s linear; 
+}
+
+.link:not(:last-child) {
+  margin-right: 45px;
+}
+
+.link:hover {
+  color: var(--second);
+}

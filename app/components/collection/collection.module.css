@@ -1,0 +1,93 @@
+.collection {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.header {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  color: var(--main);
+  margin-bottom: 92px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  flex-basis: 30%;
+  height: 550px;
+  padding: 20px;
+  position: relative;
+  border: 1px solid var(--grey);
+  transition: all .3s linear;
+}
+
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+
+
+.link {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  padding: 20px;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  background-color: var(--second);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: 31px 22px;
+  background-position: center center;
+  z-index: 3;
+  transition: all .3s linear;
+}
+
+.card:hover .link::after  {
+  opacity: 0.5;
+}
+
+.img {
+  width: 80%;
+  height: 300px;
+  margin-bottom: 25px;
+}
+.card__header {
+  color: var(--main);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.price {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+  color: var(--grey);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}

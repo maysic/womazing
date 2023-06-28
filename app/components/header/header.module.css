@@ -1,0 +1,55 @@
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 50px 0 40px 0;
+  z-index: 10;
+}
+
+
+
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  color: var(--main);
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  transition: all .3s linear; 
+}
+
+.link:not(:last-child) {
+  margin-right: 45px;
+}
+
+.link:hover {
+  color: var(--second);
+}
+
+
+.right .link {
+  background-image: url(/tel.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 30px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg path {
+  transition:  all .3s linear;
+}
+
+
+
+.bags_link:hover svg path {
+  fill: var(--second);
+} 

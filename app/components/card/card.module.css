@@ -1,0 +1,33 @@
+.card {
+  flex-basis: 20%;
+  max-height: 400px;
+  padding: 10px 20px 40px 20px;
+  border: 1px solid var(--main);
+  margin-right: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.img {
+  width: 95%;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: var(--main);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.4px;
+}
+
+.price {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: var(--price);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}

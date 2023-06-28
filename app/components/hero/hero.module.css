@@ -1,0 +1,106 @@
+.hero {
+  padding-top: 115px;
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  height: 100%;
+  width: 46%;
+  background-color: var(--back);
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  flex-basis: 50%;
+  padding-top: 146px;
+  padding-bottom: 190px;
+}
+
+.header {
+  font-size: 55px;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  color: var(--main);
+  margin-bottom: 45px;
+}
+
+.text {
+  width: 70%;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.4px;
+  text-align: right;
+  margin-bottom: 52px;
+}
+
+.link_box {
+  padding-left: 26%;
+  padding-right: 30%;
+}
+
+.link {
+  position: relative;
+  color: #FFF;
+  text-align: center;
+  font-size: 17px;
+  line-height: 138.9%;
+  letter-spacing: 0.34px;
+  color: var(--white);
+  background-color: var(--second);
+  display: block;
+  padding: 22px 50px;
+  transition: all .3s linear;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  width: 67px;
+  height: 100%;
+  top: 0;
+  left: -66px;
+  background-image: url("/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.link:hover {
+  opacity: 0.64;
+}
+
+
+.right {
+  flex-basis: 50%;
+  padding-left: 14%;
+  position: relative;
+}
+
+.woman_one {
+  height: 90%;
+  width: 100%;
+}
+
+.woman_two {
+  position: absolute;
+  top: 110px;
+  right: -80px;
+  width: 30%;
+  height: 25%;
+}
+
+
+.woman_three {
+  position: absolute;
+  width: 30%;
+  height: 40%;
+  bottom: 0;
+  left: 50px;
+}
