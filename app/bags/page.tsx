@@ -7,9 +7,6 @@ import { card } from '../types';
 
 import NavInPages from '../components/navInPages/navInPages';
 
-export const metadata: Metadata = {
-  title: 'Ваша корзина товаров',
-}
 
 export default function Bags() {
   const { removeProduct} = useStore()
