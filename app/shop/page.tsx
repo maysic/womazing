@@ -1,4 +1,3 @@
-'use client'
 import { Metadata } from 'next';
 import styles from './page.module.css'
 import NavInPages from '../components/navInPages/navInPages';

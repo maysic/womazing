@@ -1,8 +1,8 @@
-'use client'
 import { Metadata } from 'next';
 import styles from './page.module.css'
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 import NavInPages from '../components/navInPages/navInPages';
+
 export const metadata: Metadata = {
   title: 'Контакты',
   description: 'Контакты бренда Womazing',
