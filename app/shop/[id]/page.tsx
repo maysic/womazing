@@ -14,11 +14,15 @@ async function getData(id:string) {
   return response.json()
 }
 
+export type Props = {
+  params: {
+    id: string
+  }
+}
 
 
 
-
-export default async function CardItem(id:string) {
+export default async function CardItem({params: { id }}: Props) {
 
   
   const {bags, addProduct} = useStore()
