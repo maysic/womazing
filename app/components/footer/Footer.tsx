@@ -1,12 +1,11 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import Logo from '../header/logo/logo';
 import Nav from '../header/nav/Nav';
 import styles from './footer.module.css'
 
 export default function Footer() {
   return ( 
-    <footer>
+    <footer className={styles.footer}>
       <div className="container">
         <div className={styles.content}>
           <div className={styles.left}>

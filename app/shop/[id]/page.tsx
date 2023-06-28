@@ -1,4 +1,3 @@
-'use client'
 import { ProductList, card } from "@/app/types";
 import { Metadata } from "next";
 import styles from './page.module.css'
