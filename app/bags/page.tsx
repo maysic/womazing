@@ -14,7 +14,7 @@ export default function Bags() {
   if (storage) {
     listStorage = JSON.parse(storage)
   }
-  let list = listStorage || bags
+  let list = bags || listStorage
 
   let count = 0
   let copy = 0
